@@ -1,0 +1,152 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "WszNIXiN4glO"
+      },
+      "outputs": [],
+      "source": [
+        "print(\"Veremos si un numero es par o impar\")\n",
+        "## Solicitamos el numero al usuario\n",
+        "numero= int(input(\"Digite el numero \"))\n",
+        "\n",
+        "if numero %2 == 0:\n",
+        "  print(\"Su numero es par \")\n",
+        "else:\n",
+        "  print(\"Su numero es impar \")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Veremos si un año es bisiesto o no\")\n",
+        "## Solicitamos el año al usuario\n",
+        "año = int(input(\"Digite el año \"))\n",
+        "## divisible entre 4\n",
+        "if año % 4 == 0 and año %100 != 0 or año %400 == 0:\n",
+        "  print(\"Es bisiesto\")\n",
+        "else:\n",
+        "  print(\"No es bisiesto\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Pv8UHO984l4F",
+        "outputId": "a3d49eb4-22a8-44e0-892a-83f95b785f52"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Veremos si un año es bisiesto o no\n",
+            "Digite el año 2000\n",
+            "Es bisiesto\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Escribe un programa que solicite el nombre del usuario y determine si una persona pertenece a la tercera edad (70 años o más) y si se cumple la condición, imprima que se le da prioridad en la fila.\")\n",
+        "\n",
+        "## Solicitamos datos al usuario\n",
+        "nombre = input(\"Digite su nombre \")\n",
+        "edad = int(input(\"Digite su edad \"))\n",
+        "## Validamos con un if la edad del usuario y hacemos prints\n",
+        "if edad >= 70:\n",
+        "  print(\"Usuario\",nombre,\"Tienes prioridad en la fila\")\n",
+        "else:\n",
+        "  print(\"No tienes prioridad\")"
+      ],
+      "metadata": {
+        "id": "O5lV4kmN4pat"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Desarrolla un programa que compare tres números y muestre el mayor.\")\n",
+        "\n",
+        "## Solicitamos numeros al usuario\n",
+        "num1 = int(input(\"Digite un numero: \"))\n",
+        "num2 = int(input(\"Digite un numero: \"))\n",
+        "num3 = int(input(\"Digite un numero: \"))\n",
+        "\n",
+        "## Formulas de validacion\n",
+        "\n",
+        "if num1 > num2 and num1 > num3:\n",
+        "  print(\"El numero 1 es el mayor\")\n",
+        "elif num2 > num1 and num2 > num3:\n",
+        "  print(\"El numero 2 es el mayor\")\n",
+        "elif num3 > num2 and num3 > num1:\n",
+        "  print(\"El numero 3 es el mayor\")\n"
+      ],
+      "metadata": {
+        "id": "L7JZEVra4sTM"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Desarrola para que identifique si es escaleno, equilatero, isosceles\")\n",
+        "\n",
+        "num1 = int(input(\"Digite un numero: \"))\n",
+        "num2 = int(input(\"Digite un numero: \"))\n",
+        "num3 = int(input(\"Digite un numero: \"))\n",
+        "\n",
+        "\n",
+        "if num1 == num2 and num1 == num3:\n",
+        "  print(\"Tu triangulo es equilatero\")\n",
+        "elif num1 == num2 or num1 == num3 or num3 == num2:\n",
+        "  print(\"Tu triagunlo es isoceles\")\n",
+        "else:\n",
+        "  print(\"tu triangulo es escaleno\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zacgR-PQ4s19",
+        "outputId": "55c6661d-6668-4192-f621-13b84d77dd18"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Desarrola para que identifique si es escaleno, equilatero, isosceles\n",
+            "Digite un numero: 1\n",
+            "Digite un numero: 1\n",
+            "Digite un numero: 0\n",
+            "Tu triagunlo es isoceles\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
